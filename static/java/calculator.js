@@ -1,13 +1,15 @@
-var number_of_bushels = document.querySelector('totalBushels')
+function submit() {
+  number_of_bushels = document.getElementsByClassName('totalBushels')[0].value;
+  bushels = number_of_bushels;
+  fuelType = document.getElementsByClassName('fuelType')[0].value;
+  grainType = document.getElementsByClassName('grainType')[0].value;
+console.log(number_of_bushels,fuelType,grainType)
 
-function submit(number_of_bushels) {
-  console.log(number_of_bushels)
 };
 
-d3.select("button").on("click", () => {
-  let number_of_bushels = document.getElementsByClassName('totalBushels')[0].value;
-  submit(number_of_bushels)
-});
+function calculate(bushels) {
+
+}
 
 
 

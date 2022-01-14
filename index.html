@@ -17,7 +17,16 @@
 <body>
     <h1>Dryeration Drying Cost Calculator</h1>
     <input class = "totalBushels" type = "number" placeholder = "# of bushels dried"></input>
-    <button class = "submit"><strong>Submit</submit></button>
+    <select class = "fuelType">
+      <option>LP</option>
+      <option>Natural Gas</option>
+    </select>
+
+    <select class = "grainType">
+      <option>Corn</option>
+      <option>Soybean</option>
+    </select>
+    <button class = "submit" onclick = "submit()"><strong>Submit</strong></button>
 
 
 
