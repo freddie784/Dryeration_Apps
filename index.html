@@ -16,19 +16,29 @@
 </head>
 <body>
     <h1>Dryeration Drying Cost Calculator</h1>
-    <input class = "totalBushels" type = "number" placeholder = "# of bushels dried"></input>
+    <input class = "totalBushels" type = "number" placeholder = "# of bushels dried" />
     <select class = "fuelType">
       <option>LP</option>
       <option>Natural Gas</option>
     </select>
-
     <select class = "grainType">
       <option>Corn</option>
       <option>Soybean</option>
     </select>
+    <input class = "grainMoisture" />
+      <datalist id = 'tickmarks'>
+        
+      </datalist>
     <button class = "submit" onclick = "submit()"><strong>Submit</strong></button>
+    <br>
+    <div>
 
-
+      <p>Calculations are assuming you are drying to the following moisture percentages</p>
+      <ul>
+        <li>Corn - 15.5% - 56lbs/bu</li>
+        <li>Soybeans - 13% - 60lbs/bu</li>
+      </ul>    
+    </div>
 
     
 
